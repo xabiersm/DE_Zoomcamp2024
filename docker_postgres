@@ -1,0 +1,7 @@
+docker run -it \
+    -e POSTGRES_USER="root" \
+    -e POSTGRES_PASSWORD="root" \
+    -e POSTGRES_DB="ny_taxi" \
+    -v c:/Users/xabie/Documents/Zoomcamp2024_local/Zoomcamp2024_local/Week_1/ny_taxi_postgres_data:/var/lib/postgresql/data/ \
+    -p 5432:5432 \
+    postgres:13
